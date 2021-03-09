@@ -1,0 +1,21 @@
+---
+info:
+  id: mysql-5
+  name: MySQL Server 5
+  description:  MySQL is an open-source relational database management system (RDBMS). It's one of the most popular database system in the world.
+  version: 0.0.1
+  icon: null
+  image:  mysql:5
+env:
+  - name: Root Password
+    variable: MYSQL_ROOT_PASSWORD
+    description: Initial Root Password
+data:
+  - name: Database Storage
+    description: The location to store the database files.
+    location: /var/lib/mysql
+network:
+  - name: MySQL Port
+    type: tcp
+    description: The port for mysql database.
+    port: 3306
