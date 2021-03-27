@@ -1,5 +1,5 @@
-[
-  {
+{
+  "mysql-5": {
     "info": {
       "id": "mysql-5",
       "name": "MySQL Server 5",
@@ -31,4 +31,4 @@
       }
     ]
   }
-]
+}

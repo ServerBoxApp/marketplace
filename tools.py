@@ -4,9 +4,10 @@ workdir = Path('.')
 templates = list(workdir.glob('*.yml'))
 
 def generate():
-    data = list()
+    data = {}
     for template in templates:
-        data.append(yaml.safe_load(template.read_text()))
+        json_data = yaml.safe_load(template.read_text())
+        data[json_data['info']['id']] = json_data
     product = workdir / 'data.json'
     product.write_text(json.dumps(data,indent=2, sort_keys=False))
 
