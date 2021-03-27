@@ -1,4 +1,30 @@
 {
+  "redis": {
+    "info": {
+      "id": "redis",
+      "name": "Redis Server",
+      "description": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
+      "version": "0.0.1",
+      "icon": "https://raw.githubusercontent.com/ServerBoxApp/marketplace/main/redis.svg",
+      "image": "redis:6"
+    },
+    "env": [],
+    "data": [
+      {
+        "name": "Database Storage",
+        "description": "The location to store the database files.",
+        "location": "/data"
+      }
+    ],
+    "network": [
+      {
+        "name": "Redis Port",
+        "type": "tcp",
+        "description": "The port for Redis database.",
+        "port": 6379
+      }
+    ]
+  },
   "mysql-5": {
     "info": {
       "id": "mysql-5",
