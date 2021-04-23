@@ -119,5 +119,31 @@
         "port": 32400
       }
     ]
+  },
+  "coder-server": {
+    "info": {
+      "id": "coder-server",
+      "name": "Coder",
+      "description": "Coder is a self-host IDE based on Visual Studio Code. It Run VS Code on any machine anywhere and access it in the browser.",
+      "version": "0.0.1",
+      "icon": "https://raw.githubusercontent.com/ServerBoxApp/marketplace/main/coder.svg",
+      "image": "codercom/code-server"
+    },
+    "env": [],
+    "data": [
+      {
+        "name": "Database Storage",
+        "description": "The location to store the config files.",
+        "location": "/home/coder/.config"
+      }
+    ],
+    "network": [
+      {
+        "name": "Web Access Port",
+        "type": "http",
+        "description": "The port to visit the service.",
+        "port": 8080
+      }
+    ]
   }
 }
