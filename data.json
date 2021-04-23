@@ -89,37 +89,6 @@
       }
     ]
   },
-  "plex": {
-    "info": {
-      "id": "plex",
-      "name": "Plex Media Server",
-      "description": "Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server. has always been a top priority. Straightforward design and bulk actions mean getting things done faster.",
-      "version": "0.0.1",
-      "icon": "https://raw.githubusercontent.com/ServerBoxApp/marketplace/main/plex.svg",
-      "image": "plexinc/pms-docker"
-    },
-    "env": [],
-    "data": [
-      {
-        "name": "Database Storage",
-        "description": "The place to storage all the data and configuration files.",
-        "location": "/config"
-      },
-      {
-        "name": "Movies / TV Serieses storage location",
-        "description": "The location that your movies located in your host.",
-        "location": "/data"
-      }
-    ],
-    "network": [
-      {
-        "name": "Website Port",
-        "type": "http",
-        "description": "The port for visiting plex.",
-        "port": 32400
-      }
-    ]
-  },
   "coder-server": {
     "info": {
       "id": "coder-server",
